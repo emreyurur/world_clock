@@ -1,31 +1,20 @@
-// HomeScreen.js
+import react from "react";
+import { SafeAreaView,View,Text,StyleSheet } from "react-native";
 
-import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
-
-const HomeScreen = ({ navigation }) => {
-  return (
+const HomeScreen=()=>{
+  return(
     <View style={styles.container}>
-      <Text style={styles.title}>World Clock App</Text>
-      <Button
-        title="Dünya Saatleri"
-        onPress={() => navigation.navigate('WelcomeScreen')}
-      />
+      <Text>Emreyrr</Text>
     </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-});
+  )
+}
 
 export default HomeScreen;
+
+const styles=StyleSheet.create({
+  container:{
+    flex:1,
+    alignItems:"center",
+    justifyContent:"center"
+  }
+})

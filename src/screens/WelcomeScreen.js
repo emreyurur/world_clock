@@ -1,23 +1,32 @@
-// WelcomeScreen.js
-
 import React from 'react';
-import { View, Text, Image, StyleSheet, Button } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      {/* <Image
-        source={require('./path-to-your-image/welcome-image.png')}
+      <Image
         style={styles.image}
-      /> */}
+        source={require('../assets/welcome.png')}
+      />
       <Text style={styles.title}>Welcome to World Clock App</Text>
       <Text style={styles.subtitle}>
         Explore and track different time zones around the world.
       </Text>
-      <Button
-        title="Get Started"
-        onPress={() => navigation.navigate('HomeScreen')}
-      />
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity
+          style={[styles.button, { backgroundColor: '#7FC7D9' }]}
+          onPress={() => navigation.navigate('SignUpScreen')}
+        >
+          <Text style={styles.buttonText}>Sign up</Text>
+        </TouchableOpacity>
+        <View style={styles.buttonSpace}></View>
+        <TouchableOpacity
+          style={[styles.button, { backgroundColor: '#7FC7D9' }]}
+          onPress={() => navigation.navigate('HomeScreen')}
+        >
+          <Text style={styles.buttonText}>Explore</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -40,10 +49,29 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   subtitle: {
-    fontSize:25,
+    fontSize: 25,
     textAlign: 'center',
-    marginTop:10,
+    marginTop: 10,
     marginBottom: 20,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    marginTop: 20,
+  },
+  button: {
+    flex: 1,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 6,
+  },
+  buttonText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+  buttonSpace: {
+    width: 16,
   },
 });
 
