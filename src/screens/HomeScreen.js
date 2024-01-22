@@ -8,10 +8,8 @@ const HomeScreen = ({ navigation }) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    handleCountryRequest(); // Sayfa yüklenirken ülkeleri çek
-
-    // Bu kısımda başka useEffect veya gerekli diğer kodları ekleyebilirsiniz
-  }, []); // boş dependency array, sadece sayfa yüklendiğinde bir kere çalışmasını sağlar
+    handleCountryRequest(); 
+  }, []); 
 
   const handleCountryRequest = async () => {
     try {
@@ -26,7 +24,6 @@ const HomeScreen = ({ navigation }) => {
   };
 
   const handleCountryPress = (country) => {
-    // İstenirse, seçilen ülkenin saat bilgisi gibi daha fazla detay için ayrı bir API çağrısı yapılabilir.
     console.log('Selected country:', country);
   };
 
