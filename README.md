@@ -19,5 +19,7 @@ bulunuyor.
 
 **6- Tüm stillendirmeler ilgili .js dosyalarının içinde yapıldı.Stillendirme için ayrı dosyalar oluşturulmadı.**
 
-![Demo Video](../assets/Demo.mp4)
+
+
+
 
