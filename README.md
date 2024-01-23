@@ -19,8 +19,5 @@ bulunuyor.
 
 **6- Tüm stillendirmeler ilgili .js dosyalarının içinde yapıldı.Stillendirme için ayrı dosyalar oluşturulmadı.**
 
-**7- DEMOYU İZLEMEK İÇİN GÖRSELE TIKLAYINIZ**
-
-![Demo Video](assets/Demo.png)
-[![Demo Video](assets/Demo.png)](assets/Demo.mp4)
+![Demo Video](../assets/user.png)
 
