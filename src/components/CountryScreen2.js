@@ -40,6 +40,7 @@ const CountryScreen = ({ timezone,backgroundColor,text }) => {
       <View style={styles.contentContainer}>
         {countryInfo && (
           <>
+            <Text style={{fontSize:20,marginBottom:15}}>Merhaba,Emre!</Text>
             <Text style={styles.title}>{timezone}</Text>
             <Text style={{fontSize:30,fontWeight:"bold",textAlign:"center"}}>{getFormattedTime()}</Text>
             <Text style={styles.text}>Current Time: {countryInfo.utc_datetime}</Text>
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   contentContainer: {
-    backgroundColor: '#fff',
+    backgroundColor: '#0B60B0',
     borderRadius: 10,
     padding: 20,
   },
@@ -70,6 +71,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     margin: 10,
+    color:"white"
   },
   loadingContainer: {
     flex: 1,

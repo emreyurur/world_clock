@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, TextInput, ActivityIndicator, ScrollView } from 'react-native';
 import axios from 'axios';
+import CountryScreen2 from '../components/CountryScreen2';
 
 const HomeScreen = ({ navigation }) => {
   const [searchText, setSearchText] = useState('');
@@ -28,8 +29,11 @@ const HomeScreen = ({ navigation }) => {
     if (country ==='Europe/Madrid') {
       navigation.navigate('MadridScreen');
     }
-    else if(country ==='Africa/Cairo', country){
+     else if(country === 'Africa/Cairo'){
       navigation.navigate('CairoScreen');
+    }
+     else if (country === 'Europe/Istanbul') {
+      navigation.navigate('IstanbulScreen');
     }
      else {
       navigation.navigate('CountryScreen', { timezone: country });
@@ -41,7 +45,9 @@ const HomeScreen = ({ navigation }) => {
   );
 
   return (
+    
     <ScrollView contentContainerStyle={styles.container}>
+      <CountryScreen2 timezone="Europe/Istanbul" />
       <TextInput
         style={styles.searchInput}
         placeholder="Search for a country"
@@ -73,13 +79,16 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     height: 40,
+    height:40,
     width: '80%',
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 8,
     marginTop:12,
     marginBottom: 16,
+    paddingTop:4,
     paddingLeft: 8,
+    fontSize:20
   },
   title: {
     fontSize: 24,
@@ -99,6 +108,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
   },
+  countryScreen:{
+    backgroundColor:"#0B60B0"
+  }
 });
 
 export default HomeScreen;

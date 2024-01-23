@@ -10,6 +10,7 @@ import WelcomeScreen from './src/screens/WelcomeScreen';
 import Madrid from './src/screens/MadridScreen';
 import MadridScreen from "./src/screens/MadridScreen";
 import CairoScreen from "./src/screens/CairoScreen";
+import IstanbulScreen from "./src/screens/IstanbulScreen";
 
 
 const Stack=createNativeStackNavigator();
@@ -23,6 +24,7 @@ const App=()=>{
         <Stack.Screen name="HomeScreen" component={HomeScreen}/>
         <Stack.Screen name="MadridScreen" component={MadridScreen}/>
         <Stack.Screen name="CairoScreen" component={CairoScreen}/>
+        <Stack.Screen name="IstanbulScreen" component={IstanbulScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   )
