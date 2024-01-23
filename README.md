@@ -19,6 +19,8 @@ bulunuyor.
 
 **6- Tüm stillendirmeler ilgili .js dosyalarının içinde yapıldı.Stillendirme için ayrı dosyalar oluşturulmadı.**
 
+https://github.com/emreyurur/world_clock/assets/100517137/12f32cfd-278f-4612-bec9-edd61883db0d
+
 
 
 
