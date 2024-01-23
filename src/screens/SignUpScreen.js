@@ -5,7 +5,7 @@ const SignUpScreen = ({ navigation }) => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const[password,setPassword]=useState("")
+  const [password,setPassword]=useState("")
   console.log(name);
   console.log(lastName);
   

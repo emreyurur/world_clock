@@ -25,6 +25,15 @@ const HomeScreen = ({ navigation }) => {
 
   const handleCountryPress = (country) => {
     console.log('Selected country:', country);
+    if (country ==='Europe/Madrid') {
+      navigation.navigate('MadridScreen');
+    }
+    else if(country ==='Africa/Cairo', country){
+      navigation.navigate('CairoScreen');
+    }
+     else {
+      navigation.navigate('CountryScreen', { timezone: country });
+    }
   };
 
   const filteredCountries = countries.filter((country) =>
