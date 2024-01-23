@@ -1,10 +1,10 @@
 # world_clock
 
-Proje Adı: Dünya Saatleri Gösterim Uygulaması
+**Proje Adı: Dünya Saatleri Gösterim Uygulaması**
 
-Kullanılacak Public API: http://worldtimeapi.org
+**Kullanılacak Public API: http://worldtimeapi.org**
 
-Proje Özellikleri:
+**Proje Özellikleri:**
 
 **1-** App.js: Screen'lerin Router'i bulunuyor.
 
